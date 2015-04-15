@@ -1,4 +1,4 @@
-# zookeeper_cli
+# zookeeper-cli
 the zookeeper client tool in docker container
 
 ### using below command to test zookeeper
