@@ -12,3 +12,8 @@ the zookeeper client tool in docker container
 - `# docker0_ip=$(/usr/bin/ip -o -4 addr list docker0 | grep global | awk '{print $4}'| cut -d/ -f1)`
 - `# docker run -it --rm duffqiu/zookeeper-cli -server $docker0_ip:2181`
 - note: you also can use the eth0's ip
+
+### zookeeper server with service discovery
+
+- need to add `--dns=<dns server name>` and `--dns-search=<domain name>` when run the contianer
+
