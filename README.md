@@ -16,4 +16,5 @@ the zookeeper client tool in docker container
 ### zookeeper server with service discovery
 
 - need to add `--dns=<dns server name>` and `--dns-search=<domain name>` when run the contianer
+- for example: docker run -it --rm --dns=192.168.3.119 --dns-search cluster.duffqiu.org duffqiu/zookeeper-cli -server zookeeper-1:2181,zookeeper-2:2181,zookeeper-3:2181
 
